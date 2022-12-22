@@ -34,7 +34,7 @@ export class CadastroMedicoComponent {
     if (this.validarInformacoes()) {
       if (this.profissional.idProfissional == 0) {
         console.log(this.profissional)
-        this.http.post('https://localhost:7267/api/Profissional/Criar', this.beneficiario)
+        this.http.post('https://localhost:7267/api/Profissional/Criar', this.profissional)
           .subscribe((data) => {
             this.router.navigate(['/'])
 

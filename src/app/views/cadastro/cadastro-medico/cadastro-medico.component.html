@@ -27,24 +27,18 @@
 <div class="personal">
 
   <div class="input">
-    <label>Nome:</label>
-    <input />
+    <label for="nomeProfissional">Nome:</label>
+    <input id="nomeProfissional" [(ngModel)]="profissional.nome" name="nomeProfissional" type="text"/>
   </div>
 
   <div class="input">
-    <label>Telefone: </label>
-    <input />
+    <label for="telefoneProfissional">Telefone:</label>
+    <input id="telefoneProfissional" [(ngModel)]="profissional.telefone" name="telefoneProfissional" type="text"/>
   </div>
 
   <div class="input">
-    <label>Endereço: </label>
-    <input />
-  </div>
+    <label for="enderecoProfissional">Endereco:</label>
+    <input id="enderecoProfissional" [(ngModel)]="profissional.endereco" name="enderecoProfissional" type="text"/>
 
-  <div class="input">
-    <label>Horário de Atendimento: </label>
-    <input />
-  </div>
-
-  <button routerLink="/">Cadastrar</button>
+    <input type="submit" class="submit" value="Cadastrar" routerLink="/" (click)="salvar()"/>
 </div>
