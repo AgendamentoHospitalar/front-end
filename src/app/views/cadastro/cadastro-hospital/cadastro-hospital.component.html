@@ -1,0 +1,55 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<div class="title-top">
+  <h1>Cadastro Hospital</h1>
+  <div class="cards">
+
+    <div class="card">
+      <img class="hospital" src="../assets/hospital.png"/>
+      <p>Hospital</p>
+    </div>
+
+    <div routerLink="/cadastro-usuario" class="card">
+      <img class="usuario" routerLink="/cadastro-usuario" src="../assets/usuario.png"/>
+      <p>Beneficiário</p>
+    </div>
+
+    <div routerLink="/cadastro-medico" class="last-card">
+      <img class="profissional" src="../assets/profissional.png"/>
+      <p>Profissional</p>
+    </div>
+
+  </div>
+</div>
+
+<form>
+
+  <div class="input">
+    <label>Nome:</label>
+    <input />
+  </div>
+
+  <div class="input">
+    <label>Cnpj:</label>
+    <input />
+  </div>
+
+  <div class="input">
+    <label>Endereço:</label>
+    <input />
+  </div>
+
+  <div class="input">
+    <label>Telefone:</label>
+    <input />
+  </div>
+
+  <div class="input">
+    <label>CNES:</label>
+    <input />
+  </div>
+
+  <button routerLink="/">Cadastrar</button>
+</form>

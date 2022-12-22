@@ -1,0 +1,24 @@
+<div class="home" >
+  <h1 class="login">LOGIN</h1>
+
+  <form action="" method="post">
+    <div class="input">
+      <label>Email:</label>
+      <input placeholder="exemplo@exemplo.com" type="email" name="emmail" required oninvalid="this.setCustomValidity('O Campo e-mail é obrigatório e deve conter @ e domínio')"
+      oninput="this.setCustomValidity('')"/>
+    </div>
+
+    <div class="input">
+      <label>Senha:</label>
+      <input placeholder="***********" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      title="A senha deve conter, ao menos uma letra minúscula, uma letra maiúscula, um número e 8 caracteres" >
+    </div>
+    <button name="button" type="submit" routerLink="/agendamento">Login</button>
+    <div class="line"></div>
+    <div class="links-login">
+      <p>Não tem cadastro?<a href="#"> Clique Aqui!</a></p>
+      <p>Esqueceu a senha?<a href="#"> Clique Aqui!</a></p>
+    </div>
+  </form>
+
+</div>

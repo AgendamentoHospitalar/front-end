@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.cards {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: 85px;
+  height: 85px;
+  background: #0066FF;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.last-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: 85px;
+  height: 85px;
+  background: #0066FF;
+  border-radius: 20px;
+}
+
+.title-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+
+.profissional {
+  max-height: 45px;
+  margin-top: 7%;
+}
+
+.usuario {
+  max-height: 40px;
+  margin-top: 12%;
+}
+
+.hospital {
+  max-height: 40px;
+  margin-top: 10%;
+}
+
+form {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  border: 1.8px solid #CFCFCF;
+  border-radius: 25px;
+  margin-bottom: 3%;
+  outline: none;
+  padding-left: 15px;
+}
+
+div.input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.6rem;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+button {
+  width: 300px;
+  height: 35px;
+  border: none;
+  background: #0066FF;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+  margin-top: 0.6rem;
+  margin-bottom: 2%;
+  outline: none;
+  padding-left: 15px
+}

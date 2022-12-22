@@ -1,0 +1,49 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<router-outlet></router-outlet>
+<body>
+  <div class="title">
+    <h2>Painel Administrativo</h2>
+    <h3>Administração de Tabelas</h3>
+  </div>
+  <nav>
+    <button routerLink="/painel/painel-hospital" class="button">Hospital</button>
+    <button class="button">Especialidade</button>
+    <button routerLink="/painel/painel-profissional" class="button">Profissional</button>
+    <button routerLink="/painel/painel-beneficiario" class="button">Beneficiários</button>
+    <button routerLink="/painel/painel-agendamento" class="last-button">Agendamentos</button>
+  </nav>
+  <h2 class="tabela">Tabela Especialidade</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Ativo</th>
+        <th class="icons"></th>
+        <th class="icons"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="body">
+        <td>teste</td>
+        <td>teste</td>
+        <td>teste</td>
+        <td>teste</td>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+        <td class="icons">
+          <img routerLink="/editar-especialidade" class="icons" src="../../../assets/editar.svg"/>
+        </td>
+        <td class="icons">
+          <img class="icons" src="../../../assets/deletar.svg"/>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</body>
