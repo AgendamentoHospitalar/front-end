@@ -61,11 +61,16 @@ p {
   margin-top: 10%;
 }
 
-form.personal {
+div.personal {
   margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.submit {
+  color: white;
+  background-color: #0066FF;
 }
 
 input {

@@ -24,32 +24,32 @@
   </div>
 </div>
 
-<form>
+<div class="form">
 
   <div class="input">
-    <label>Nome:</label>
-    <input />
+    <label for="nomeHospital">Nome:</label>
+    <input id="nomeHospital" [(ngModel)]="hospital.nome" name="nomeHospital" type="text"/>
   </div>
 
   <div class="input">
-    <label>Cnpj:</label>
-    <input />
+    <label for="cnpjHospital">Cnpj:</label>
+    <input id="cnpjHospital" [(ngModel)]="hospital.cnpj" name="cnpjHospital" type="text"/>
   </div>
 
   <div class="input">
-    <label>Endereço:</label>
-    <input />
+    <label for="enderecoHospital">Endereco:</label>
+    <input id="enderecoHospital" [(ngModel)]="hospital.endereco" name="enderecoHospital" type="text"/>
   </div>
 
   <div class="input">
-    <label>Telefone:</label>
-    <input />
+    <label for="telefoneHospital">Telefone:</label>
+    <input id="telefoneHospital" [(ngModel)]="hospital.telefone" name="telefoneHospital" type="text"/>
   </div>
 
   <div class="input">
-    <label>CNES:</label>
-    <input />
+    <label for="cnesHospital">CNES:</label>
+    <input id="cnesHospital" [(ngModel)]="hospital.cnes" name="cnesHospital" type="text"/>
   </div>
 
-  <button routerLink="/">Cadastrar</button>
-</form>
+  <input type="submit" class="submit" value="Cadastrar" routerLink="/" (click)="salvar()"/>
+</div>
