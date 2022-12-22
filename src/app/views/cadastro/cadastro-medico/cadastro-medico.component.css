@@ -61,7 +61,7 @@ p {
   margin-top: 10%;
 }
 
-form {
+form.personal {
   margin-top: 2%;
   display: flex;
   flex-direction: column;

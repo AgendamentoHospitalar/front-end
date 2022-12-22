@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,6 +21,9 @@ import { PainelEspecialidadeComponent } from './views/painel/painel-especialidad
 import { PainelProfissionalComponent } from './views/painel/painel-profissional/painel-profissional.component';
 import { PainelBeneficiarioComponent } from './views/painel/painel-beneficiario/painel-beneficiario.component';
 import { PainelAgendamentoComponent } from './views/painel/painel-agendamento/painel-agendamento.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,9 +48,12 @@ import { PainelAgendamentoComponent } from './views/painel/painel-agendamento/pa
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [HttpClientModule, AppRoutingModule, RouterModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

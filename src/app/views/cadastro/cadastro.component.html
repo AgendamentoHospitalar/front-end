@@ -1,6 +1,4 @@
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <div class="title-top">
   <h1>Cadastro Beneficiário</h1>
@@ -23,48 +21,48 @@
 
   </div>
 </div>
-<form class="personal">
+<div class="personal">
 
   <h2 class="text">Dados Pessoais</h2>
 
   <div class="input">
-    <label>Nome:</label>
-    <input />
+    <label for="nomeBeneficiario">Nome:</label>
+    <input id="nomeBeneficiario" [(ngModel)]="beneficiario.nome" name="nomeBeneficiario" type="text"/>
   </div>
 
   <div class="input">
-    <label>CPF:</label>
-    <input />
+    <label for="cpfBeneficiario">CPF:</label>
+    <input id="cpfBeneficiario" [(ngModel)]="beneficiario.cpf" name="cpfBeneficiario" type="text"/>
   </div>
 
   <div class="input">
-    <label>Telefone:</label>
-    <input />
+    <label for="telefoneBeneficiario">Telefone:</label>
+    <input id="telefoneBeneficiario" [(ngModel)]="beneficiario.telefone" name="telefoneBeneficiario" type="text"/>
   </div>
 
   <div class="input">
-    <label>Endereço:</label>
-    <input />
+    <label for="enderecoBeneficiario">Endereço:</label>
+    <input id="enderecoBeneficiario" [(ngModel)]="beneficiario.endereco" type="text" name="enderecoBeneficiario"/>
   </div>
 
   <div class="input">
-    <label>Nº da Carteira de Saúde:</label>
-    <input />
+    <label for="numeroCarteirinhaBeneficiario">Nº da Carteira de Saúde:</label>
+    <input id="numeroCarteirinhaBeneficiario"  [(ngModel)]="beneficiario.numeroCarteirinha" type="text" name="numeroCarteirinhaBeneficiario"/>
   </div>
 
   <h2 class="text">Dados Para Login</h2>
   <div class="input">
-    <label>Email:</label>
-    <input />
+    <label for="emailBeneficiario">Email:</label>
+    <input id="emailBeneficiario" [(ngModel)]="beneficiario.email"  type="email" name="emailBeneficiario"/>
   </div>
 
   <div class="input">
-    <label>Senha:</label>
-    <input />
+    <label for="senhaBeneficiario">Senha:</label>
+    <input type="password" id="senhaBeneficiario" [(ngModel)]="beneficiario.senha" name="senhaBeneficiario"/>
   </div>
 
-  <input type="submit" class="submit" value="Cadastrar" routerLink="/"/>
+  <input type="submit" class="submit" value="Cadastrar" routerLink="/" (click)="salvar()"/>
 
-</form>
+</div>
 
 
